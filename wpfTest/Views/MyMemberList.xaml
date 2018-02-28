@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfTest.Views.MyMemberList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Views="clr-namespace:WpfTest.Views"
+        xmlns:ViewModels="clr-namespace:WpfTest.ViewModels"
+        xmlns:local="clr-namespace:WpfTest.Views"
+        mc:Ignorable="d"
+        Title="MyMemberList" Height="300" Width="500">
+    
+    <Window.DataContext>
+        <ViewModels:myViewModel/>
+    </Window.DataContext>
+    
+    <Views:MyMemberListControl/>
+
+</Window>
